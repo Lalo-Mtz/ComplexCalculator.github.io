@@ -1,0 +1,181 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0;
+}
+
+.contenedor{
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(../img/uaa-footer.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 18rem;
+    height: 9.8rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.navegacion a:hover{
+    color: #4d84e2;
+}
+
+.navegacion a:last-of-type{
+    margin: 0;
+}
+
+.first-number{
+    position: absolute;
+    top: 14rem;
+    left: 45rem;
+    border: 2px dotted #4d84e2;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.second-number{
+    position: absolute;
+    top: 14rem;
+    left: 110rem;
+    border: 2px dotted #4d84e2;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.result{
+    position: absolute;
+    top: 40rem;
+    left: 77rem;
+    border: 2px dotted #4d84e2;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.polar{
+    position: absolute;
+    top: 54rem;
+    left: 8rem;
+    border: 2px dotted #4d84e2;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+h3{
+    text-align: center;
+    margin: 0;
+}
+
+label{
+    font-size: 2rem;
+}
+
+input{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+}
+
+.r{
+    margin-right: 2rem;
+}
+
+.operation{
+    position: absolute;
+    top: 14rem;
+    left: 88rem;
+    width: 20rem;
+    display: block;
+    border: 2px dotted #71B100;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+button{
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background-color: #71B100;
+    color: #fff;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+button:first-of-type{
+    margin-top: 0;
+}
+
+.btns{
+    text-align: center;
+}
+
+.convert{
+    position: absolute;
+    top: 62rem;
+    left: 73rem;
+    width: 50rem;
+    display: flex;
+    border: 2px dotted #71B100;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.convert button{
+    margin-top: 0;
+}
+
+.con{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

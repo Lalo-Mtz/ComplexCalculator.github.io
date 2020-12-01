@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Complejos</title>
+    <script src="js/p5.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="/">
+                    <h1 class="logo"></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="#">Integrantes</a>
+                    <a href="#">Explicacion</a>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="first-number">
+        <h3>Fisrt Number</h3>
+        <div class="content">
+            <div class="r">
+                <label for="real1">Real:</label>
+                <input type="text" name="real1" id="real1" autocomplete="off">
+            </div>
+
+            <div class="i">
+                <label for="imaginary1">Imaginary:</label>
+                <input type="text" name="imaginary1" id="imaginary1" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <div class="second-number">
+        <h3>Second Number</h3>
+        <div class="content">
+            <div class="r">
+                <label for="real2">Real:</label>
+                <input type="text" name="real2" id="real2" autocomplete="off">
+            </div>
+            
+            <div class="i">
+                <label for="imaginary2">Imaginary:</label>
+                <input type="text" name="imaginary2" id="imaginary2" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="result">
+        <h3>Result</h3>
+        <div class="content">
+            <div class="r">
+                <label for="real3">Real:</label>
+                <input type="text" name="real3" id="real3" autocomplete="off">
+            </div>
+            
+            <div class="i">
+                <label for="imaginary3">Imaginary:</label>
+                <input type="text" name="imaginary3" id="imaginary3" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <div class="polar">
+        <h3>Polar</h3>
+        <div class="content">
+            <div class="r">
+                <label for="magnitud">Magnitude:</label>
+                <input type="text" name="magnitud" id="magnitud" autocomplete="off">
+            </div>
+            
+            <div class="i">
+                <label for="angle">Angle:</label>
+                <input type="text" name="angle" id="angle" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <div class="operation">
+        <div class="btns">
+            <button id="add">Add</button>
+            <button id="subtract">Subtract</button>
+            <button id="multiply">Multiply</button>
+            <button id="divide">Divide</button>
+        </div>
+    </div>
+
+    <div class="convert">
+        <div class="con">
+            <button id="rtp">Rectangular to Polar</button>
+            <button id="ptr">Polar to Rectangular</button>
+        </div>
+    </div>
+
+    <script src="js/grafica.js"></script>
+    <script src="js/porcess.js"></script>
+</body>
+</html>
