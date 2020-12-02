@@ -52,5 +52,46 @@ divide.addEventListener('click', e =>{
     pushValues(r3, i3);
 });
 
+const getValuesRTP = () =>{
+    r = parseFloat(real3.value);
+    i = parseFloat(img3.value);
+}
 
+const pushValuesRTP = (m, a) =>{
+    magnitud.value = m;
+    angle.value = a; 
+    x = r;
+    y = i;
+}
 
+rtp.addEventListener('click', e => {
+    getValuesRTP();
+
+    m = Math.sqrt(r*r+i*i);
+    a = Math.atan(i/r);
+    a *= 180/Math.PI;
+
+    if(r < 0){
+        a += 180;
+    }
+
+    if(i < 0 && r > 0){
+        a += 360;
+    }
+
+    pushValuesRTP(m, a, r, i);
+});
+
+const getValuesPTR = () =>{
+    mag = parseFloat(magnitud.value);
+    ang = parseFloat(angle.value);
+}
+
+ptr.addEventListener('click', e => {
+    getValuesPTR();
+
+    real = mag*Math.cos(ang*Math.PI/180);
+    imaginary = mag*Math.sin(ang*Math.PI/180);
+
+    pushValues(real, imaginary);
+});
