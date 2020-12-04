@@ -75,45 +75,123 @@ p{
     margin: 0;
 }
 
+
+
+
+
 .first-number{
-    position: absolute;
+    /*position: absolute;
     top: 14rem;
-    left: 45rem;
+    left: 45rem;*/
     border: 2px dotted #4d84e2;
-    padding: 3rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.operation{
+    /*position: absolute;
+    top: 14rem;
+    left: 88rem;*/
+    width: 20rem;
+    display: block;
+    border: 2px dotted #71B100;
+    padding: 2rem;
     border-radius: 2rem;
 }
 
 .second-number{
-    position: absolute;
+    /*position: absolute;
     top: 14rem;
-    left: 110rem;
+    left: 110rem;*/
     border: 2px dotted #4d84e2;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 2rem;
 }
 
-.result{
-    position: absolute;
-    top: 40rem;
-    left: 77rem;
-    border: 2px dotted #4d84e2;
-    padding: 3rem;
-    border-radius: 2rem;
+.section-n{
+    display: flex;
+    justify-content: space-between;
+    width: 105rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
 }
 
-.polar{
-    position: absolute;
-    top: 54rem;
-    left: 8rem;
-    border: 2px dotted #4d84e2;
-    padding: 3rem;
-    border-radius: 2rem;
+.cnt{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 h3{
     text-align: center;
     margin: 0;
+    margin-top: 2rem;
+}
+
+
+.cntm{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.re{
+    width: 105rem;
+    margin-right: 1rem;
+}
+
+.result{
+    /*position: absolute;
+    top: 40rem;
+    left: 77rem;*/
+    border: 2px dotted #4d84e2;
+    padding: 3rem;
+    border-radius: 2rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.result h3{
+    margin-top: -2rem;
+}
+
+.site-f{
+    width: 100%;
+}
+
+.section-b{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.polar{
+    /*position: absolute;
+    top: 54rem;
+    left: 8rem;*/
+    border: 2px dotted #4d84e2;
+    padding: 3rem;
+    border-radius: 2rem;
+    margin-left: -11rem;
+}
+
+.polar h3{
+    margin-top: -2rem;
+}
+
+.convert{
+    /*position: absolute;
+    top: 62rem;
+    left: 73rem;*/
+    width: 50rem;
+    display: flex;
+    border: 2px dotted #71B100;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-right: 13rem;
 }
 
 label{
@@ -134,16 +212,7 @@ input{
     margin-right: 2rem;
 }
 
-.operation{
-    position: absolute;
-    top: 14rem;
-    left: 88rem;
-    width: 20rem;
-    display: block;
-    border: 2px dotted #71B100;
-    padding: 2rem;
-    border-radius: 2rem;
-}
+
 
 button{
     border: none;
@@ -164,16 +233,6 @@ button:first-of-type{
     text-align: center;
 }
 
-.convert{
-    position: absolute;
-    top: 62rem;
-    left: 73rem;
-    width: 50rem;
-    display: flex;
-    border: 2px dotted #71B100;
-    padding: 2rem;
-    border-radius: 2rem;
-}
 
 .convert button{
     margin-top: 0;
@@ -226,4 +285,5 @@ footer{
     background-color: #313436;
     text-align: center;
     padding: 3px;
+    
 }
