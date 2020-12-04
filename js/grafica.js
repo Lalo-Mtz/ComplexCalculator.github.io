@@ -5,7 +5,7 @@ let j=10, h=10;
 
 function setup(){
     let cv = createCanvas(450,410);
-    cv.position(10,145);
+    cv.position(10,430);
 }
 
 

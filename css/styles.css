@@ -76,22 +76,21 @@ p{
 }
 
 
-
-
+.section-n{
+    display: flex;
+    justify-content: space-between;
+    max-width: 140rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
 
 .first-number{
-    /*position: absolute;
-    top: 14rem;
-    left: 45rem;*/
     border: 2px dotted #4d84e2;
     padding: 2rem;
     border-radius: 2rem;
 }
 
 .operation{
-    /*position: absolute;
-    top: 14rem;
-    left: 88rem;*/
     width: 20rem;
     display: block;
     border: 2px dotted #71B100;
@@ -100,26 +99,9 @@ p{
 }
 
 .second-number{
-    /*position: absolute;
-    top: 14rem;
-    left: 110rem;*/
     border: 2px dotted #4d84e2;
     padding: 2rem;
     border-radius: 2rem;
-}
-
-.section-n{
-    display: flex;
-    justify-content: space-between;
-    width: 105rem;
-    margin-top: 2rem;
-    margin-right: 1rem;
-}
-
-.cnt{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
 }
 
 h3{
@@ -131,13 +113,12 @@ h3{
 
 .cntm{
     display: flex;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     width: 100%;
 }
 
 .re{
-    width: 105rem;
-    margin-right: 1rem;
+    width: 100%;
 }
 
 .result{
@@ -158,6 +139,7 @@ h3{
 
 .site-f{
     width: 100%;
+    margin-top: 3rem;
 }
 
 .section-b{
@@ -169,29 +151,26 @@ h3{
 }
 
 .polar{
-    /*position: absolute;
-    top: 54rem;
-    left: 8rem;*/
     border: 2px dotted #4d84e2;
     padding: 3rem;
     border-radius: 2rem;
-    margin-left: -11rem;
+    margin-left: 30rem;
 }
 
 .polar h3{
     margin-top: -2rem;
 }
 
+.cnt-btns{
+    margin-left: 10rem;
+}
+
 .convert{
-    /*position: absolute;
-    top: 62rem;
-    left: 73rem;*/
     width: 50rem;
     display: flex;
     border: 2px dotted #71B100;
     padding: 2rem;
     border-radius: 2rem;
-    margin-right: 13rem;
 }
 
 label{
@@ -245,7 +224,7 @@ button:first-of-type{
 }
 
 footer{
-    margin-top: 1%;
+    margin-top: 10rem;
     width: 100%;
     color: white;
     background-color: #313436;
@@ -285,5 +264,4 @@ footer{
     background-color: #313436;
     text-align: center;
     padding: 3px;
-    
 }
