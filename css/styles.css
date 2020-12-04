@@ -208,6 +208,15 @@ button:first-of-type{
     margin-top: 0;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    color: #333333;
+}
+
+
 .btns{
     text-align: center;
 }

@@ -89,7 +89,7 @@ function draw(){
     //line(400,210, 400, 190);
     
 
-    if(x!=0 && y!=0){
+    //if(x!=0 && y!=0){
         line(225, 200, ((10+x)*20)+25, ((10-y)*20));
 
         stroke('blue');
@@ -109,6 +109,6 @@ function draw(){
         stroke('red');
         strokeWeight(10);
         point(((10+x)*20)+25, ((10-y)*20));
-    }
+    //}
 
 }

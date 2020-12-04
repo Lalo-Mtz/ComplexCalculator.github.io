@@ -16,10 +16,10 @@ const add = document.getElementById('add'),
     ptr = document.getElementById('ptr');
 
 const getValues = () =>{
-    r1 = parseFloat(real1.value);
-    r2 = parseFloat(real2.value);
-    i1 = parseFloat(img1.value);
-    i2 = parseFloat(img2.value);
+    r1 = (real1.value == "") ? 0 : parseFloat(real1.value);
+    r2 = (real2.value == "") ? 0 : parseFloat(real2.value);
+    i1 = (img1.value == "") ? 0 : parseFloat(img1.value);
+    i2 = (img2.value == "") ? 0 : parseFloat(img2.value);
 }
 
 const pushValues = (r3,i3) =>{
@@ -49,12 +49,15 @@ divide.addEventListener('click', e =>{
     getValues();
     r3 = (r1*r2 + i1*i2)/(r2*r2 + i2*i2);
     i3 = ((-r1)*i2 + i1*r2)/(r2*r2 + i2*i2);
+    
+    r3 = (isNaN(r3)) ? 0 : r3;
+    i3 = (isNaN(i3)) ? 0 : i3;
     pushValues(r3, i3);
 });
 
 const getValuesRTP = () =>{
-    r = parseFloat(real3.value);
-    i = parseFloat(img3.value);
+    r = (real3.value == "") ? 0 : parseFloat(real3.value);
+    i = (img3.value == "") ? 0 : parseFloat(img3.value);
 }
 
 const pushValuesRTP = (m, a) =>{
@@ -68,6 +71,7 @@ rtp.addEventListener('click', e => {
     getValuesRTP();
 
     m = Math.sqrt(r*r+i*i);
+
     a = Math.atan(i/r);
     a *= 180/Math.PI;
 
@@ -79,12 +83,16 @@ rtp.addEventListener('click', e => {
         a += 360;
     }
 
+    a = (a>270) ? (360-a)*-1 : a;
+
+    a = (isNaN(a)) ? 0 : a;
+
     pushValuesRTP(m, a, r, i);
 });
 
 const getValuesPTR = () =>{
-    mag = parseFloat(magnitud.value);
-    ang = parseFloat(angle.value);
+    mag = (magnitud.value == "") ? 0 : parseFloat(magnitud.value);
+    ang = (angle.value == "") ? 0 : parseFloat(angle.value);
 }
 
 ptr.addEventListener('click', e => {
