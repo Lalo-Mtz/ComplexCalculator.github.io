@@ -21,6 +21,7 @@ function draw(){
 
     if(o > 100000 || p > 100000){
         x = y = 0;
+        x1 = y1 = 0;
     }else{
         if(o>10000){
             l = 50000;
@@ -90,33 +91,28 @@ function draw(){
         line((210)+20, 20*i, (190)+30, 20*i);
     }
 
-    //line(0, 210, 0, 190);
+    
     line((210)+25, 0, (190)+25, 0);
-    //line(10,210, 10, 190);
 
-    //line(400,210, 400, 190);
+    
+    line(225, 200, ((10+x1)*20)+25, ((10-y1)*20));
+
+    stroke('blue');
+    line(((10+x1)*20)+25, 200, ((10+x1)*20)+25, ((10-y1)*20));
+
+    line((10*20)+25, ((10-y1)*20), ((10+x1)*20)+25, ((10-y1)*20));
+
+    stroke('green');
+    if(x1<0 && y1<0)
+        arc(225, 200, 120, 120, -Math.atan(y1/x1)+Math.PI, Math.PI*2);
+    else if(x1<0 && y1>0)
+        arc(225, 200, 120, 120, -Math.atan(y1/x1)-Math.PI, Math.PI*2);
+    else
+        arc(225, 200, 120, 120, -Math.atan(y1/x1), Math.PI*2);
     
 
-    //if(x!=0 && y!=0){
-        line(225, 200, ((10+x1)*20)+25, ((10-y1)*20));
-
-        stroke('blue');
-        line(((10+x1)*20)+25, 200, ((10+x1)*20)+25, ((10-y1)*20));
-
-        line((10*20)+25, ((10-y1)*20), ((10+x1)*20)+25, ((10-y1)*20));
-
-        stroke('green');
-        if(x1<0 && y1<0)
-            arc(225, 200, 120, 120, -Math.atan(y1/x1)+Math.PI, Math.PI*2);
-        else if(x1<0 && y1>0)
-            arc(225, 200, 120, 120, -Math.atan(y1/x1)-Math.PI, Math.PI*2);
-        else
-            arc(225, 200, 120, 120, -Math.atan(y1/x1), Math.PI*2);
-        
-
-        stroke('red');
-        strokeWeight(10);
-        point(((10+x1)*20)+25, ((10-y1)*20));
-    //}
+    stroke('red');
+    strokeWeight(10);
+    point(((10+x1)*20)+25, ((10-y1)*20));
 
 }
