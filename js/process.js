@@ -91,15 +91,40 @@ rtp.addEventListener('click', e => {
 });
 
 const getValuesPTR = () =>{
-    mag = (magnitud.value == "") ? 0 : parseFloat(magnitud.value);
+    magn = (magnitud.value == "") ? 0 : parseFloat(magnitud.value);
     ang = (angle.value == "") ? 0 : parseFloat(angle.value);
 }
 
 ptr.addEventListener('click', e => {
     getValuesPTR();
 
-    real = mag*Math.cos(ang*Math.PI/180);
-    imaginary = mag*Math.sin(ang*Math.PI/180);
+    if(Math.abs(ang) != 90){
+        real = magn*Math.cos(ang*Math.PI/180);
+    }else{
+        real = 0;
+    }
 
-    pushValues(real, imaginary);
+    if(ang != 180){
+        imaginary = magn*Math.sin(ang*Math.PI/180);
+    }else{
+        imaginary = 0;
+    }
+    imaginary = magn*Math.sin(ang*Math.PI/180);
+
+    pushValuesP(real, imaginary);
 });
+
+const pushValuesP = (r7,i7) =>{
+    if(6.123233995736766e-16 == i7){
+        img3.value = 0;
+    }else{
+        img3.value = i7;
+    }
+    
+    real3.value = x = r7;
+    y = i7;
+
+    console.log(r7);
+    console.log(i7);
+    clear();
+}

@@ -39,7 +39,7 @@ function draw(){
             l = 50;
             j = 100;
             x1 = x/10;
-        }else if(o>0){
+        }else if(o>=0){
             l = 5;
             j = 10;
             x1 = x;
@@ -61,7 +61,7 @@ function draw(){
             k = 50;
             h = 100;
             y1 = y/10;
-        }else if(p>0){
+        }else if(p>=0){
             k = 5;
             h = 10;
             y1 = y;
